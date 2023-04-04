@@ -2,13 +2,13 @@
 name: 'Custom GitHub Action'
 description: 'A GitHub Action that takes an input and returns the square of the number'
 
-input:
+inputs:
   num:
     description: 'Enter a number'
     required: true
     default: "1"
 
-output:
+outputs:
   num_squared:
     description: 'Square of the input'
     value: ${{ steps.get-square.outputs.num_squared }}
